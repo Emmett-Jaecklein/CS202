@@ -1,0 +1,39 @@
+/* Style rule - selector and declaration */
+/* selector - element, id(#), class(.), multiple selectors */
+/* declaration - {propertyname:value;} */
+/* variable - roots  */
+:root{
+    --main-color: #05a081;
+    --primary-color: #00795f;
+    --font-family: 'Nunito';
+}
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;1,700&display=swap');
+@import '../css/footer.css';
+@import '../css/header.css';
+body{
+    background-color: #ccc;
+    font-family: var(--font-family);
+}
+p{
+    /* font-family: 'Nunito, sans-serif';
+    font-style: italic;
+    font-style: 18px ; 
+    /* #rrbbgg (0-9 & A - F)
+    font-weight: bold;
+    font-variant: small-caps;
+    line-height: 16px;
+    */
+    font: italic small-caps 18px/16px 'Nunito', sans-serif;
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--main-color);
+}
+/* important rule */
+h2{
+    color: blue !important;
+    background-color: var(--primary-color);
+}
+.container{
+    width:60% !important;
+}
